@@ -2,7 +2,7 @@
 * { box-sizing:border-box; } body { margin:0; min-height:100vh; display:grid; place-items:center; padding:28px; }
 main { width:min(1040px, 100%); display:grid; grid-template-columns:minmax(340px, 1fr) 280px; gap:26px; align-items:center; }
 .board-shell,.quiz { background:#292722; border-radius:16px; padding:18px; }
-#board { display:grid; grid-template-columns:repeat(8,1fr); aspect-ratio:1; width:100%; }
+#board { display:grid; grid-template-columns:repeat(8,1fr); grid-template-rows: repeat(8, 1fr); aspect-ratio:1; width:100%; }
 .square { display:grid; place-items:center; position:relative; font-size:clamp(25px,5.2vw,59px); line-height:1; }
 .piece { width:88%; height:88%; object-fit:contain; z-index:1; }
 .light { background:#f0d9b5; } .dark { background:#b58863; }.white { color:#fff; text-shadow:0 1px 2px #333; }.black { color:#252525; }
