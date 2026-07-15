@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chess Memo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="board-shell"><div id="board" aria-label="Chess board"></div></section>
+    <aside>
+      <p class="eyebrow">CHESS MEMO</p>
+      <h1>See it. Remember it.</h1>
+      <p id="status">Loading a Lichess position…</p>
+      <button id="start" disabled>Hide pieces &amp; start</button>
+      <button id="new" class="secondary">New Lichess position</button>
+      <section class="quiz">
+        <p class="eyebrow">QUIZ</p>
+        <h2 id="question">Memorize the position, then begin.</h2>
+        <div id="answers" class="answers" aria-live="polite"></div>
+        <p id="score">Score: 0 / 15</p>
+      </section>
+    </aside>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
